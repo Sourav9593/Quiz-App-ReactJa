@@ -1,0 +1,74 @@
+/* src/Modal.css */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.5s;
+  }
+  
+  .modal-content {
+    background: rgba(218, 182, 255, 0.5);
+    padding: 2em;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    width: 80%;
+    animation: slideIn 0.5s;
+  }
+  
+  .modal-content h2 {
+    margin-top: 0;
+  }
+  
+  .modal-content p{
+    margin-bottom: 1rem;
+    font-size: 20px;
+  }
+  /* .modal-content Link {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 1em 2em;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 1em;
+  }
+  
+  .modal-content Link:hover {
+    background: #0056b3;
+  } */
+  /* src/styles.css */
+.nav-link {
+    background: #007BFF;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .nav-link:hover {
+    background-color: #0056b3;
+    color: white;
+  }
+  
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideIn {
+    from { transform: translateY(-50px); }
+    to { transform: translateY(0); }
+  }
